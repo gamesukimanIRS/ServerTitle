@@ -11,7 +11,7 @@ use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\utils\TextFormat;
 use pocketmine\scheduler\PluginTask;
 
-class main extends PluginBase implements Listener{
+class Main extends PluginBase implements Listener{
 
  	public function onEnable(){
 		$this->getServer()->getPluginManager()->registerEvents($this,$this);
