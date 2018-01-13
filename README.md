@@ -1,6 +1,6 @@
 # ServerTitle
 
-↓最新のダウンロードはpoggitの最新ビルドから
+↓最新のダウンロードはpoggitの最新ビルドから  
 [![PoggitCI Badge](https://poggit.pmmp.io/ci.badge/gamesukimanIRS/ServerTitle/ServerTitle)](https://poggit.pmmp.io/ci/gamesukimanIRS/ServerTitle/ServerTitle)
 
 
