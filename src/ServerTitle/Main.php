@@ -30,32 +30,7 @@ class Main extends PluginBase implements Listener{
 
 	public function onPlayerJoin(PlayerJoinEvent $event){
 		$player = $event->getPlayer();  
-		$task = new Send($this,$player);
+		$task = new send($this,$player);
 		$this->getServer()->getScheduler()->scheduleDelayedTask($task,20);
-	}
-}
-
-class Send extends PluginTask{
-
-	public function __construct(PluginBase $owner,Player $player){
-		parent::__construct($owner);
-		$this->player = $player;
-	}
-
-	public function onRun(int $currentTick){
-		$this->Config = $this->owner->Config;
-		$title = $this->Config->get("serverName");
-		$subtitle = $this->Config->get("serverVersion");
-		if($title == ""){
-			$this->Config->set("serverName", "§l§bMinecraft:PE Server");
-			$this->Config->save();
-		}
-		if($subtitle == ""){
-			$this->Config->set("serverVersion", "MCPE for x.x.x");
-			$this->Config->save();
-		}
-		$title = $this->Config->get("serverName");
-		$subtitle = $this->Config->get("serverVersion");
-		$this->player->addTitle($title, $subtitle, "20", "20", "20");
 	}
 }
