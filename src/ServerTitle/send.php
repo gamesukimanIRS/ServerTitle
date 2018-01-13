@@ -5,7 +5,7 @@ use pocketmine\scheduler\PluginTask;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 
-class Send extends PluginTask{
+class send extends PluginTask{
 
 	public function __construct(PluginBase $owner,Player $player){
 		parent::__construct($owner);
